@@ -6,19 +6,19 @@ stages
 stage('Build')
 {
 steps{
-sh 'sh home/esdeath82/Devopsproject1/build.sh'
+sh 'sh build.sh'
 }
 }
 stage('Test')
 {
 steps{
-sh 'sh home/esdeath82/Devopsproject1/test.sh'
+sh 'sh test.sh'
 }
 }
 stage('Deploy')
 {
 steps{
-sh 'sh home/esdeath82/Devopsproject1/deploy.sh'
+sh 'sh deploy.sh'
 }
 }
 }
