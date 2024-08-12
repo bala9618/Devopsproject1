@@ -12,6 +12,7 @@ fi
 
 sudo docker images | grep "$I_N" > /dev/null
 if [ $? -eq 0];
+then
 sudo docker rmi $I_N
 fi
 
